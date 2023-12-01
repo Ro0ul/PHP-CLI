@@ -8,7 +8,7 @@ PHP >= 8.1
 Composer Installed
 
 # Installation 
-  1. First Install This Package 
+  1. First Clone This Repo 
   2. Create A File With whatever Name You Want
   3. Insert This PHP Code into the file : 
   ```php 
