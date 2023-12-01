@@ -39,5 +39,4 @@ Composer Installed
   ```
     php <cli-name> make:command <command-name>
   ```
-  ⚠ Note : Please Change the commands Directory
   
