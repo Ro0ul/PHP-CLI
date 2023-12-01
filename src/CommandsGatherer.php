@@ -5,7 +5,7 @@ use Roul\Cli\Kernel\Kernel;
 
 class CommandsGatherer {
 
-    private static array $commands = [];
+    public static array $commands = [];
 
     /**
      * Registers A new command to the static array commands variable
