@@ -18,7 +18,7 @@ class Kernel {
         $keyIsFound = false;
         foreach ($this->commands as $command) {
             $commandName = $command[0];
-            $commandDesc = $command[1];
+            // $commandDesc = $command[1];
             $commandCallback = $command[2];
             $inputName = str_replace(" ","",$argv[1]);
             if($inputName == $commandName){

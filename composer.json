@@ -2,13 +2,10 @@
     "name": "roul/php-cli",
     "autoload": {
         "psr-4": {
-            "Roul\\Cli\\": "src/"
+            "Roul\\Cli\\": "src/",
+            "Tests\\":"tests/"
         }
     },
-    "require": {
-        
-    }
-    ,
     "version": "1.0.0",
     "license": "MIT",
     "authors": [
@@ -19,5 +16,11 @@
         }
     ],
     "minimum-stability": "dev",
-    "php-version":"8.1"
+    "php-version":"8.1",
+    "require-dev": {
+        "phpunit/phpunit": "^11.0@dev"
+    },
+    "require": {
+        "jawira/case-converter": "dev-master"
+    }
 }

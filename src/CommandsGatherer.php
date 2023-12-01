@@ -9,9 +9,9 @@ class CommandsGatherer {
 
     /**
      * Registers A new command to the static array commands variable
-     * @var $name Name Of the command
-     * @var $description Description of the command 
-     * @var $method The Callback Provided by the Command class
+     * @param $name Name Of the command
+     * @param $description Description of the command 
+     * @param $method The Callback Provided by the Command class
      */
     public static function gather(
         string $name,

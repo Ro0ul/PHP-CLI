@@ -9,9 +9,9 @@ class NewCommand extends Command {
         protected string $name = "",
         protected string $description = "",
     ){
-        CommandsGatherer::gather($this->name, $this->description, [$this,'action']);
+        CommandsGatherer::gather($this->name, $this->description, [$this,'execute']);
     }
-    public function action() : void 
+    public function execute() : void 
     {
         
     }
