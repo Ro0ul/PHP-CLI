@@ -1,0 +1,9 @@
+{
+    "name": "roul/cli",
+    "autoload": {
+        "psr-4": {
+            "Roul\\Cli\\": "src/"
+        }
+    },
+    "require": {}
+}
