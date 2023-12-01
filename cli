@@ -1,6 +1,6 @@
 #!/usr/bin/php
+<?php
 
-<?php 
 use Roul\Cli\CommandsGatherer;
 
 require_once __DIR__ . "/vendor/autoload.php";
@@ -10,6 +10,5 @@ $commands = include("Commands.php");
 foreach ($commands as $name => $command) {
     new $command;
 }
-   
 
 CommandsGatherer::run();
