@@ -7,6 +7,11 @@ class Kernel {
     public function __construct(
         private array $commands
     ){}
+
+    /**
+     * First it Checks if the command is Found if not then it will throw an exception if the command is found it will call the callback
+     * Provided By the command class
+     */
     public function run()
     {
         global $argv;

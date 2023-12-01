@@ -1,0 +1,18 @@
+#!/usr/bin/php
+<?php
+
+use Roul\Cli\CommandsGatherer;
+
+# You Can require The Autoload File of your own project 
+require_once __DIR__ . "/../vendor/autoload.php"; 
+
+# Gets all the commands
+$commands = include("Commands.php");
+
+foreach ($commands as $name => $command) {
+    #creates a new instance of a command
+    new $command;
+}
+
+#Runs the CommandsGatherer To gather all commands and send them to the kernel
+CommandsGatherer::run();

@@ -7,7 +7,7 @@ class Command {
         protected string $name,
         protected string $description = "",
     ){
-        CommandsGatherer::gather($this->name, $this->description, $this->action());
+        CommandsGatherer::gather($this->name, $this->description, [$this,"action"]);
     }
 
     protected function getArguments() : array 
