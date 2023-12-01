@@ -1,9 +1,22 @@
 {
-    "name": "roul/cli",
+    "name": "roul/php-cli",
     "autoload": {
         "psr-4": {
             "Roul\\Cli\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        
+    }
+    ,
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "email": "saad.naami055@gmail.com",
+            "name": "Ro0ul",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev"
 }
