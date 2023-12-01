@@ -18,5 +18,6 @@
             "role": "Developer"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "php-version":"8.1"
 }
