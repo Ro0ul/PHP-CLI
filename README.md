@@ -4,13 +4,17 @@ A PHP Console Application Library
 
 # Prerequisites
 
-PHP >= 8.1
-Composer Installed
+. PHP >= 8.1 .
+. Composer Installed .
 
 # Installation 
-  1. First Clone This Repo 
-  2. Create A File With whatever Name You Want
-  3. Insert This PHP Code into the file : 
+  1. Install the package
+  2. ```
+        composer require roul/php-cli
+     ```
+  3. Make Sure you have dev as minimum stablity in the composer.json file
+  4. Create A File With whatever Name You Want
+  5. Insert This PHP Code into the file : 
   ```php 
       #!/usr/bin/php
     <?php
@@ -28,8 +32,8 @@ Composer Installed
     CommandsGatherer::run();
 
   ``` 
-  4. Create A "Commands.php" File That returns an array of all the commands you want
-  5. If You want to use The Base Commands Just Import the Classes in the "Roul\Cli\BaseCommands" Directory 
+  6. Create A "Commands.php" File That returns an array of all the commands you want
+  7. If You want to use The Base Commands Just Import the Classes in the "Roul\Cli\BaseCommands" Directory 
 
   # Usage 
 
