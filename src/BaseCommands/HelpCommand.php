@@ -13,16 +13,20 @@ class HelpCommand extends Command{
     }
     public function execute() : void 
     {
-        foreach(CommandsGatherer::$commands as $command){
-            if(!$command[1]){
-                $description = "No Description Available";
-            }else{
-                $description = $command[1];
+        if(!empty(CommandsGatherer::$commands)){
+            foreach(CommandsGatherer::$commands as $command){
+                if(!$command[1]){
+                    $description = "No Description Available";
+                }else{
+                    $description = $command[1];
+                }
+                $commandName = $command[0];
+                echo "Name : $commandName \n";
+                echo "Description : $description \n";
+                echo "------------------ \n";
             }
-            $commandName = $command[0];
-            echo "Name : $commandName \n";
-            echo "Description : $description \n";
-            echo "------------------ \n";
+            exit;
         }
+        echo "No Commands Found... Make Sure You Add Commands";
     }
 }
